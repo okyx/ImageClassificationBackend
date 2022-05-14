@@ -1,0 +1,22 @@
+{
+  "name": "klasifikasibackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "start-dev": "nodemon src/app.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "@tensorflow/tfjs": "^3.17.0",
+    "@tensorflow/tfjs-node": "^3.17.0",
+    "@tensorflow/tfjs-node-gpu": "^3.17.0",
+    "dotenv": "^16.0.1",
+    "instances-container": "^2.0.6",
+    "nodemon": "^2.0.16"
+  }
+}

@@ -3,7 +3,12 @@ const predict = require('../../interfaces/api/predictImage');
 const createServer = async(container) => {
   const server = Hapi.server({
     host: process.env.HOST,
-    port: process.env.PORT
+    port: process.env.PORT,
+    routes: {
+      cors: {
+        origin: ['*'],
+      },
+    },
   });
   await server.register([
     {

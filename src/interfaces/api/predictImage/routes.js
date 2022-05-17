@@ -11,6 +11,15 @@ const routes = (handler) => [
         maxBytes: 512000,
       }
     }
+  },
+  {
+    method: 'GET',
+    path: '/',
+    handler: ()=> {
+      return {
+        status:'success',
+      };
+    },
   }
 ];
 
